@@ -1,0 +1,97 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav ul{
+    background-color: dimgray;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 0.5em 2em;
+}
+nav ul li span{
+    color: rgb(41, 42, 43);
+    font-weight: bold;
+}
+.contenar{
+    background-color: rgb(6, 6, 7);
+    height: 95vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+#song_title {
+    margin: 0.2rem 0.1rem;
+    
+}
+#artist {
+    margin: 0.2rem 0.1rem;
+    
+} 
+.contenar  .music_contenar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(52, 53, 54);
+    height: 60vh;
+    width: 40vw;
+    border-radius: 1em;
+
+}
+.contenar  img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    
+    
+   
+}
+
+ audio{
+    width: 35vw;
+    height: 10vw;
+    margin-bottom: 1em;
+    
+    
+}
+.icon i{
+    margin:  1rem 0.5rem;
+    background-color: white;
+    padding: 0.3rem;
+    border-radius: 50%;
+
+}
+.icon i:hover{
+    background-color: rgb(8, 11, 185);
+}
+
+ .cd{
+     
+    font-size: 9rem;
+    animation: move 2s infinite;
+    
+}
+
+@keyframes move {
+   
+    from{transform: rotate(5deg);}
+    to{transform: rotate(360deg);}
+  }
+  @media screen and (max-width: 480px) {
+    nav{
+        display: none;
+    }
+    
+  }
+     
